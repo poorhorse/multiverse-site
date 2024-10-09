@@ -1603,7 +1603,9 @@ input, select, textarea {
 		flex-wrap: wrap;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
-
+		#main .thumb links{
+			font-size: medium;
+		}
 		#main .thumb {
 			-moz-transition: opacity 1.25s ease-in-out;
 			-webkit-transition: opacity 1.25s ease-in-out;
