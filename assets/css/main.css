@@ -2052,3 +2052,10 @@ input, select, textarea {
 		#footer .copyright a {
 			color: inherit;
 		}
+
+		#introimage {
+			width: 60%;
+			height: auto;
+		  }
+		  
+		  
