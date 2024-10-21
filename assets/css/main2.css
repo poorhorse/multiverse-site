@@ -193,7 +193,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #a0a0a1;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 15pt;
+		font-size: 25pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
 		line-height: 1.65;
@@ -1071,6 +1071,7 @@ input, select, textarea {
 		position: fixed;
 		width: 100%;
 		z-index: 10001;
+		
 	}
 
 		.panel.active {
@@ -1189,6 +1190,9 @@ input, select, textarea {
 		background: rgba(31, 34, 36, 0.925);
 		box-shadow: 0 1em 3em 0.5em rgba(0, 0, 0, 0.25);
 		cursor: default;
+		display: flex; /* Use flexbox for horizontal layout */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; 
 	}
 
 		.poptrox-popup:before {
@@ -1228,7 +1232,11 @@ input, select, textarea {
 			width: 5em;
 			z-index: 2;
 		}
-
+		.poptrox-popup img {
+			max-width: 50%; /* Control image width */
+			height: auto; /* Ensure proper scaling */
+			margin-right: 1em; /* Space between the image and caption */
+		}
 		.poptrox-popup .nav-previous,
 		.poptrox-popup .nav-next {
 			-moz-transition: opacity 0.2s ease-in-out;
@@ -1274,7 +1282,10 @@ input, select, textarea {
 			text-align: left;
 			width: 100%;
 			z-index: 2;
-			font-size: 1.5em;
+			max-width: 50%; /* Allow caption to fill remaining space */
+    padding: 1em;
+    color: white; /* Ensure caption text is visible */
+    background: rgba(16, 16, 16, 0.5);
 		}
 
 			.poptrox-popup .caption h2, .poptrox-popup .caption h3, .poptrox-popup .caption h4, .poptrox-popup .caption h5, .poptrox-popup .caption h6 {
